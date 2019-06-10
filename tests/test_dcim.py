@@ -182,7 +182,7 @@ class DeviceTestCase(Generic.Tests):
         self.assertTrue(isinstance(ret, list))
         self.assertTrue(isinstance(ret[0], self.ret))
         mock.assert_called_with(
-            'http://localhost:8000/api/{}/{}/?role=test&role=test1&site=TEST%231'.format(
+            'http://localhost:8000/api/{}/{}/?site=TEST%231&role=test&role=test1'.format(
                 self.app,
                 self.name.replace('_', '-')
             ),
